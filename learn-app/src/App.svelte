@@ -58,7 +58,7 @@
 	</div>
 </div>
 
-<button on:click={addContact}>Add Contact Card</button>
+<button on:click|once={addContact}>Add Contact Card</button>
 <button on:click={delFirst}>Delete First</button>
 <button on:click={delLast}>Delete Last</button>
 
@@ -81,7 +81,7 @@
 	<p>please start adding some contacts</p>
 {/each}
 
-<Passwords />
+<!-- <Passwords /> -->
 
 <style>
 	#form {
